@@ -34,6 +34,7 @@
             this.lblFirstName = new System.Windows.Forms.Label();
             this.lblLastName = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnExport = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listUsers
@@ -79,19 +80,30 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(482, 255);
+            this.btnAdd.Location = new System.Drawing.Point(417, 248);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(220, 106);
+            this.btnAdd.Size = new System.Drawing.Size(133, 100);
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "button1";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnExport
+            // 
+            this.btnExport.Location = new System.Drawing.Point(588, 248);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(133, 100);
+            this.btnExport.TabIndex = 6;
+            this.btnExport.Text = "button1";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnExport);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.lblFirstName);
@@ -113,6 +125,7 @@
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnExport;
     }
 }
 
