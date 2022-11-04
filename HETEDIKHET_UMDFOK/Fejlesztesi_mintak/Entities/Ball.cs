@@ -11,8 +11,11 @@ namespace Fejlesztesi_mintak.Entities
 {
     public class Ball : Toy
     {
-        public Ball()
+        public SolidBrush BallColor { get; private set; }
+
+        public Ball(Color color)
         {
+            BallColor = new SolidBrush(color);
             AutoSize = false;
             Width = 50;
             Height = Width;
@@ -26,7 +29,7 @@ namespace Fejlesztesi_mintak.Entities
 
         protected override void DrawImage(Graphics g)
         {
-            g.FillEllipse(new SolidBrush(Color.Blue), 0, 0, Width, Height);
+            g.FillEllipse(BallColor, 0, 0, Width, Height);
         }
 
         public void MoveBall()
