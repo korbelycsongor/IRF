@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Fejlesztesi_mintak.Abstractions;
 
 namespace Fejlesztesi_mintak.Entities
 {
-    public class Ball : Label
+    public class Ball : Toy
     {
         public Ball()
         {
@@ -23,7 +24,7 @@ namespace Fejlesztesi_mintak.Entities
             DrawImage(e.Graphics);
         }
 
-        protected void DrawImage(Graphics g)
+        protected override void DrawImage(Graphics g)
         {
             g.FillEllipse(new SolidBrush(Color.Blue), 0, 0, Width, Height);
         }
